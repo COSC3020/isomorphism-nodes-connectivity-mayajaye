@@ -6,34 +6,36 @@ definition of isomorphism below. Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
-$A = (V_{1}, E_{1})$ $B = (V_{1}, E_{1})$
-
 A and B are both completely connected graphs, so every pair of distinct vertices is connected by a unique edge.
+
+$A = (V_{1}, E_{1})$ $B = (V_{1}, E_{1})$
 
 $|V_1| = |V_2|$
 
 $G_1=(V_1 , E_1)$ is isomorphic to $G_2 = (V_2, E_2)$ if there exists a
 one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$.
 
-1. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
-f: V_1 \rightarrow V_2 [(u,v) \in E_{1} \iff (f(u),f(v)) \in E_{2}]$ {replace $G_1$ → A, replace $G_2$ → B}
+1. If $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1})$, there must exist a bijection function f that maps $V_1$ to $V_2$ such that:
+$[(u,v) \in E_{1} \iff (f(u),f(v)) \in E_{2}]$
 
-2. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+If the bijective function f maps $V_1$ to $V_2$, that proves A is isomorphic to B
+
+2. $\exists
 f: V_1 \rightarrow V_2 [true \iff (f(u),f(v)) \in E_{2}]$ 
 
-{definition of completeness}: Because A is complete, $(u,v)$ must belong to $E_1$
+{definition of completeness}: Because A is complete, $(u,v)$ must be a distinct pair that belongs to $E_1$
 
 3. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
 f: V_1 \rightarrow V_2 [true \iff true]$
 
-{definition of a bijection}: Because f is a bijection, it is an onto function, meaning f(u) cannot be equal to f(v). This means f(u) and f(v) will be a distinct pair that belongs to $E_2$ since B is also complete
+{definition of a bijection}: Because f is a bijection, it is an onto function, meaning since u and v are a distinct pair, f(u) cannot be equal to f(v). This means f(u) and f(v) will be a distinct pair that belongs to $E_2$ since B is also complete.
 
-4. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+4. $\exists
 f: V_1 \rightarrow V_2 [true]$ {iff truth table}
 
-5. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow true$  {condition holds}
+5. true  {condition holds}
 
-6. $true$ {implication truth table} Q.E.D.
+Because it is true that there is a bijective function f that maps $V_1$ to $V_2$ such that u and v belong to $E_1$ and f(u) and f(v) belong to $E_2$, A must be isomorphic to B.
 
 Formal definition of completeness from [this](https://www.geeksforgeeks.org/what-is-complete-graph/)
 
