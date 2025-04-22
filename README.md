@@ -6,45 +6,36 @@ definition of isomorphism below. Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
 
+$A = (V_{1}, E_{1})$ $B = (V_{1}, E_{1})$
+
+A and B are both completely connected graphs, so every pair of distinct vertices is connected by a unique edge.
+
+$|V_1| = |V_2|$
+
 $G_1=(V_1 , E_1)$ is isomorphic to $G_2 = (V_2, E_2)$ if there exists a
 one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$.
 
-    A = {                   B = {
-        X: [Y]               F: [G]
-        Y: [X]               G: [F]
-    }                       }
-
-$V_{1} = \{X, Y\}$
-
-$E_{1} = \{(X, Y), (Y, X)\}$
-
-$V_{2} = \{F, G\}$
-
-$E_{2} = \{(F, G), (G, F)\}$
-
-$G_1=(V_1 , E_1)$ is isomorphic to $G_2 = (V_2, E_2)$ if there exists a
-one-to-one and onto function (bijection) $f: V_1 \rightarrow V_2$ such that $(u,v) \in E_1$ iff $(f(u),f(v)) \in E_2$
-
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+1. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
 f: V_1 \rightarrow V_2 [(u,v) \in E_{1} \iff (f(u),f(v)) \in E_{2}]$ {replace $G_1$ → A, replace $G_2$ → B}
 
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
-f: V_1 \rightarrow V_2 [(X,Y) \in E_{1} \iff (f(X),f(Y)) \in E_{2}]$ {replace $u → X, v → Y$}
+2. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+f: V_1 \rightarrow V_2 [true \iff (f(u),f(v)) \in E_{2}]$ 
 
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
-f: V_1 \rightarrow V_2 [(X,Y) \in E_{1} \iff (F,G) \in E_{2}]$ {replace $f(X) → F, f(Y) → G$}
+{definition of completeness}: Because A is complete, $(u,v)$ must belong to $E_1$
 
+3. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+f: V_1 \rightarrow V_2 [true \iff true]$
 
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
-f: V_1 \rightarrow V_2 [true \iff true]$ {definitions of $E_1$ and $E_2$}
+{definition of a bijection}: Because f is a bijection, it is an onto function, meaning f(u) cannot be equal to f(v). This means f(u) and f(v) will be a distinct pair that belongs to $E_2$ since B is also complete
 
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
+4. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow \exists
 f: V_1 \rightarrow V_2 [true]$ {iff truth table}
 
-$A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow true$  {condition holds}
+5. $A = (V_{1}, E_{1})$ is isomorphic to $B = (V_{1}, E_{1}) \rightarrow true$  {condition holds}
 
-$true$ {implication truth table} Q.E.D.
+6. $true$ {implication truth table} Q.E.D.
 
+Formal definition of completeness from [this](https://www.geeksforgeeks.org/what-is-complete-graph/)
 
 "I certify that I have listed all sources used to complete this exercise,
 including the use of any Large Language Models. All of the work is my own, except
